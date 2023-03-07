@@ -8,7 +8,7 @@ To easily set up the application, clone this repository which contains directory
 
 ## Change directory into the newly cloned project
 ```bash
-cd nest-vue-project
+cd wallet-system
 ```
 
 ## Backend
@@ -42,7 +42,11 @@ npm run start:dev
 This will start the backend application on port `3000`.
 
 ## Frontend
-Open another terminal from the `nest-vue-project` and navigate to the `wallet-frontend` folder to setup the frontend
+Open another terminal from the `
+
+
+
+-project` and navigate to the `wallet-frontend` folder to setup the frontend
 
 ### Frontend dependencies
 ```bash
