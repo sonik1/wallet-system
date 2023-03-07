@@ -72,3 +72,8 @@ localhost:3000/transact
 
 get transactions
 localhost:3000/transactions?walletId=xxx&kip=xxx=limit=xxx
+
+Explanation-
+Wallet system has the privilege to create a wallet with user's name and the system will generate a random wallet id for the same. After this, it will be redirected to the dashboard where all registered wallets can be seen with the details included.
+Additionally, details and transact are the two options included in each card, details will the details of the wallet, transaction details and the current balance of the wallet for a particular user. Transact option, when clicked will open user's account and option to add balance with credit/debit options. When submitted, same will reflect in transaction details.
+Database is having two collections, wallet and transactions. Initially when new wallet is created, both the collections get the records, as wallet details and transaction details are added with wallet id as foreign key ref.
