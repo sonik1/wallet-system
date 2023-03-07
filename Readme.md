@@ -1,4 +1,4 @@
-# Build a wallet service using Nest.js, Vue.js and MongoDB
+# Wallet service using Nest.js, Vue.js and MongoDB
 
 Application repo for a simple wallet service built with Nest.js, Vue.js and MongoDB.
 
@@ -74,6 +74,6 @@ get transactions
 localhost:3000/transactions?walletId=xxx&kip=xxx=limit=xxx
 
 Explanation-
-Wallet system has the privilege to create a wallet with user's name and the system will generate a random wallet id for the same. After this, it will be redirected to the dashboard where all registered wallets can be seen with the details included.
-Additionally, details and transact are the two options included in each card, details will the details of the wallet, transaction details and the current balance of the wallet for a particular user. Transact option, when clicked will open user's account and option to add balance with credit/debit options. When submitted, same will reflect in transaction details.
-Database is having two collections, wallet and transactions. Initially when new wallet is created, both the collections get the records, as wallet details and transaction details are added with wallet id as foreign key ref.
+The wallet system has the privilege to create a wallet with the user's name and the system will generate a wallet id for the same. After this, it will be redirected to the dashboard where all registered wallets can be seen with the details included.
+Additionally, details and transact are the two links included in each card, clicking it will show the details of the wallet, transaction details, and the current balance of the wallet for a particular user. The other link Transact' when clicked will open a component to add a balance with credit/debit privilege. When submitted, the same will reflect in the transaction details.
+The database is having two collections, wallet and transactions. Initially, when a new wallet is created, both the collections get the records, as wallet details and transaction details are added with wallet id as foreign key ref.
