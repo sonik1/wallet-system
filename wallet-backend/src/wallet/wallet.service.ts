@@ -39,14 +39,14 @@ export class WalletService {
     }
 
     async setupWallet(createPostDTO: CreatePostDTO): Promise<any> {
-        const newPost = await this.walletModel(createPostDTO).save();
+        const newPost = await new this.walletModel(createPostDTO).save();
         let txnObj = {
             walletId: newPost._id,
             date_posted: new Date(),
             balance: createPostDTO.balance,
             type: 'credit'
         }
-        const newTxn = await this.transactionModel(txnObj).save();
+        const newTxn = await new this.transactionModel(txnObj).save();
         let txn = {
             'wallet': newPost,
             'transaction': newTxn
@@ -55,7 +55,7 @@ export class WalletService {
     }
 
     async transactWallet(walletId, createPostDTO: CreatePostDTO): Promise<any> {   
-        let saveTxn = await this.transactionModel(createPostDTO).save();
+        let saveTxn = await new this.transactionModel(createPostDTO).save();
         const allRecords = await this.transactionModel.find({"walletId":(walletId)});
 
         let creditBalance=0, debitBalance=0;
