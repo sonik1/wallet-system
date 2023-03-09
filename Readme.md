@@ -32,6 +32,9 @@ Start mongoDB:
 sudo mongod
 ```
 
+or your local directory needs to have env, with
+MONGODB_URI=XXX
+
 ### Run the application
 Open another terminal and still within the `wallet-backend` project directory run the application with:
 
