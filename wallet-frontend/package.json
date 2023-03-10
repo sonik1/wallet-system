@@ -8,6 +8,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@babel/helper-plugin-utils": "^7.20.2",
     "axios": "^0.18.0",
     "export-from-json": "^1.7.2",
     "gridjs-vue": "^5.0.4",
