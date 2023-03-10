@@ -1,3 +1,3 @@
 export const server = {
-    baseURL: 'http://localhost:3000'
+    baseURL: 'https://wallet-system-production-1825.up.railway.app'
 }
