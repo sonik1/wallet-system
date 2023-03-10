@@ -14,7 +14,7 @@
             </div>
             <div class="form-group col-md-12">
                 <label for="description"> Balance </label>
-                <input type="text" id="description" v-model="balance" name="description" class="form-control" placeholder="Enter Balance">
+                <input type="number" id="description" min="0" v-model.number="balance" name="description" class="form-control" placeholder="Enter Balance" required>
             </div>
             <div class="form-group col-md-12">
               <label for="description"> Transaction Type </label>

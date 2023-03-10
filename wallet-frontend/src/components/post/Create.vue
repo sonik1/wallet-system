@@ -5,11 +5,11 @@
           <form id="create-post-form" @submit.prevent="createPost">
                <div class="form-group col-md-12">
                 <label for="title"> Name </label>
-                <input type="text" id="title" v-model="name" name="title" class="form-control" placeholder="Enter Name">
+                <input type="text" id="title" v-model="name" name="title" class="form-control" placeholder="Enter Name" required>
                </div>
               <div class="form-group col-md-12">
                   <label for="description"> Balance </label>
-                  <input type="text" id="description" v-model="balance" name="description" class="form-control" placeholder="Enter Initial Balance">
+                  <input type="number" id="description" min="0" v-model.number="balance" name="description" class="form-control" placeholder="Enter Initial Balance" required>
               </div>
               <!-- <div class="form-group col-md-12">
                   <label for="body"> Write Content </label>
